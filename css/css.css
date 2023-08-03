@@ -1,0 +1,1086 @@
+:root{
+    --color_fundo:darkgray;
+    --color-logo:#cc0707;
+    --color-hover:#f03d3d;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*ESTILIZAÇÃO MENU*/
+header{
+    background-color: var(--color_fundo);
+    padding: 1%;
+    max-height: 11vh;
+    position: absolute;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 1px 1px 50px 1px #00000088;
+    justify-content: center;
+    align-items: center;
+    animation: opacity 4s 1 ease-in-out;
+}
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.header_top{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    animation: ani_header_top 2s 1 ease-in-out;
+}
+header
+nav{
+    position: relative;
+    
+}
+header
+nav
+.header_top
+h1{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rowdies', "cursive";
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+    header
+    nav
+    .header_top
+    h1
+    #h1letra1{
+        font-size: 1.6rem;
+        color: var(--color-logo);
+        transition: 1s;
+        animation: ani_logo 2s infinite ease-in-out alternate-reverse;
+    }
+    header
+    nav
+    .header_top
+    h1
+    #h1letra2{
+        color: var(--color-logo);
+    }
+
+
+
+header
+nav
+.header_top
+ul{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+header
+nav
+.header_top
+ul li{
+    font-family: 'Geologica', sans-serif;
+    font-weight: 300;
+    margin-right: 20px;
+    list-style: none;
+    font-size: .8rem;
+    cursor: pointer;
+    position: relative;
+}
+header
+nav
+.header_top
+ul li::before{
+   content: "";
+   position: absolute;
+   inset: 0;
+   z-index: 1;
+   top: 100%;
+   display: block;
+   border-bottom: 1px solid var(--color-logo);
+   transition: 0.5s ease-in-out;
+   transform-origin: left;
+   transform: scale(0);
+}
+header
+nav
+.header_top
+ul li:hover::before{
+    transform: scale(1);
+}
+
+header
+nav
+.header_top
+button{
+    border: none;
+    border-radius: 20px;
+    width: 140px;
+    height: 32px;
+    background-color: var(--color-logo);
+    font-family: 'Geologica', sans-serif;
+    font-weight: 300;
+    color: #e2e0e0d7;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 90%;
+    margin-bottom: 20px;
+}
+header
+nav
+.header_top
+button:hover{
+    transform: scale(1.1);
+    background-color: var(--color-hover);
+}
+/*ESTILIZAÇÃO NAV_MENU*/
+header
+nav
+#container_menu{
+    position: absolute;
+    top: 0;
+    left: 98%;
+    display: none;
+}
+
+header
+nav
+#container_menu
+#div_menu1,
+#div_menu2,
+#div_menu3{
+    height: 2px;
+    width: 17px;
+    background-color: #000000;
+    margin: 5px;
+}
+header
+nav
+#container_menu
+#div_menu1{
+}
+
+/*Estilização Section-01(Abaixo do Header)*/
+
+main
+.section_apresentação_1{
+    min-height: 88vh;
+    display: flex;
+    justify-content: space-around;
+    color: #e2e0e0d7;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, #000000f3, #000000f5), url(../img/menu/back_header.jpg);
+    animation: opacity 4s 1 ease-in-out;
+}
+
+
+/*LADO ESQUERDO(ONDE CONTÉM TEXTO E BUTÕES)*/
+main
+.section_apresentação_1
+.inter_section_apresentação_1{
+    max-width: 360px;
+    height: 300px;
+    margin-right: 100px;
+}
+
+main
+.section_apresentação_1
+.inter_section_apresentação_1 h1{
+    font-size: 150%;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rowdies', cursive;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--color-logo);
+    margin-bottom: 10px;
+    animation: ani_conteudo_downheader 2s 1 ease-in-out;
+}
+main
+.section_apresentação_1
+.inter_section_apresentação_1 p{
+    font-size: 1rem;
+    text-align-last:justify;
+    font-family: 'Geologica', sans-serif;
+    margin-bottom: 20px;
+    animation: ani_conteudo_downheader 2s 1 ease-in-out;
+}
+
+main
+.section_apresentação_1
+.inter_section_apresentação_1
+.inter_section1_btns
+.inter_btns1{
+    border: none;
+    border-radius: 30px;
+    width: 50%;
+    height: 35px;
+    background-color: var(--color-logo);
+    font-family: 'Geologica', sans-serif;
+    font-weight: 300;
+    color: #e2e0e0d7;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: 0.5s;
+    font-size: 90%;
+    animation: ani_conteudo_downheader 2s 1 ease-in-out;
+}
+main
+.section_apresentação_1
+.inter_section_apresentação_1
+.inter_section1_btns
+.inter_btns1:hover{
+    background-color: var(--color-hover);
+    transform: scale(1.1);
+}
+main
+.section_apresentação_1
+.inter_section_apresentação_1
+.inter_section1_btns
+.inter_btns2{
+    border: none;
+    border-radius: 30px;
+    width: 40%;
+    height: 35px;
+    background-color: var(--color-logo);
+    font-family: 'Geologica', sans-serif;
+    font-weight: 300;
+    color: #e2e0e0d7;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 90%;
+    animation: ani_conteudo_downheader 2s 1 ease-in-out;
+}
+main
+.section_apresentação_1
+.inter_section_apresentação_1
+.inter_section1_btns
+.inter_btns2:hover{
+    background-color: var(--color-hover);
+    transform: scale(1.1);
+}
+
+/*LADO DIREITO(ONDE CONTÉM IMG)*/
+
+.inter_section_apresentação_2{
+    width: 460px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inter_section_apresentação_2
+.img_delicias{
+    width: 350px;
+    animation: ani_img_comida_top 9s infinite alternate ease-in-out;
+}
+
+/*Estilização sessão 2*/
+
+.section_apresentação_2{
+    text-align: center;
+    background-color: darkgray;
+    margin: 10px;
+    height: 540px;
+    padding: 5px;
+}
+
+/*Estilização Saiba mais*/
+.section_apresentação_2 h1{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rowdies', 'cursive';
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+.section_apresentação_2 h1 span{
+   color: var(--color-logo);
+}
+
+
+
+.conteiner_inter_section2{
+    display: flex;
+    width:100%;
+    height: 450px;
+    margin: auto;
+    padding: 10px;
+}
+.section_apresentação_2
+.inter_section2_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    position: relative;
+}
+.section_apresentação_2
+.inter_section2_img img{
+    width: 500px;
+    position:relative;
+}
+.section_apresentação_2
+.inter_section2_img
+.agendar{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 80%;
+    background-color:rgba(169, 169, 169, 0.747);
+    color: #000000;
+    width: 300px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rowdies', 'cursive';
+}
+
+.section_apresentação_2
+.inter_section2_text_img{
+    height: 396px;
+    width: 400px;
+    background-color: red;
+}
+.section_apresentação_2
+.inter_section2_text_img p{
+    font-family:'Geologica', sans-serif;
+    font-size: 0.9rem;
+}
+
+.conteiner_inter_section2
+.inter_section2_text_img
+.ul_li_interno li{
+    font-size: 0.8rem;
+    list-style: none;
+    text-align-last: left;
+    margin-left: 3%;
+}
+.conteiner_inter_section2
+.inter_section2_text_img
+.ul_li_interno li span{
+    color: black;
+    font-size: .8rem;
+}
+
+.conteiner_inter_section2
+.inter_section2_text_img img{
+    margin-top:18%;
+    height: 200px;
+    width: 300px;
+}
+
+/*Estilização aba estatistica*/
+.conteiner-estatistica{
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 538px;
+    position: relative;
+    background-color: darkgray;
+
+    padding: 10px;
+    margin-top: 30px;
+}
+
+
+/*Estilização aba estatistica card 1*/
+.conteiner-estatistica
+.card_estatistica_1{
+    background-color:#686767;
+    height: 320px;
+    width: 200px;
+    padding: 30px;
+    color: #000000;
+
+}
+.conteiner-estatistica
+.card_estatistica_1 h1{
+    font-size:.7rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rowdies', 'cursive';
+}
+.conteiner-estatistica
+.card_estatistica_1 p{
+    font-size:10px;
+    margin-bottom: 30px;
+    font-family:'Geologica', sans-serif;
+}
+.conteiner-estatistica
+.card_estatistica_1 button{
+    background-color: var(--color-logo);
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: 'Geologica', sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(.9);
+}
+.conteiner-estatistica
+.card_estatistica_1 button:hover{
+    transform: scale(1);
+}
+
+
+/*Estilização aba estatistica card 2*/
+.conteiner-estatistica
+.card_estatistica_2{
+    background-color:#686767;
+    height: 250px;
+    width: 180px;
+    padding: 10px;
+}
+.conteiner-estatistica
+.card_estatistica_2 span{
+    font-size: 2rem;
+    margin-left: 45%;
+    margin-bottom: 20px;
+ 
+}
+.conteiner-estatistica
+.card_estatistica_2 h1{
+    font-size: .8rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rowdies', 'cursive';
+}
+.conteiner-estatistica
+.card_estatistica_2 p{
+    font-size: .7rem;;
+    font-family:'Geologica', sans-serif;
+}
+
+
+
+/*Estilização aba estatistica card 3*/
+.conteiner-estatistica
+.card_estatistica_3{
+    background-color:#686767;
+    height: 250px;
+    width: 180px;
+    padding: 10px;
+}
+.conteiner-estatistica
+.card_estatistica_3 span{
+    font-size: 2rem;
+    margin-left: 45%;
+    margin-bottom: 20px;
+ 
+}
+.conteiner-estatistica
+.card_estatistica_3 h1{
+    font-size: .8rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rowdies', cursive;
+}
+.conteiner-estatistica
+.card_estatistica_3 p{
+    font-size: .7rem;
+    font-family:'Geologica', sans-serif;
+}
+
+
+
+/*Estilização aba estatistica card 4*/
+.conteiner-estatistica
+.card_estatistica_4{
+    background-color:#686767;
+    height: 260px;
+    width: 180px;
+    padding: 10px;
+    position: relative;
+}
+.conteiner-estatistica
+.card_estatistica_4 span{
+    font-size: 2rem;
+    margin-left: 45%;
+    margin-bottom: 20px;
+ 
+}
+.conteiner-estatistica
+.card_estatistica_4 h1{
+    font-size: .8rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rowdies', 'cursive';
+}
+.conteiner-estatistica
+.card_estatistica_4 p{
+    font-size: .7rem;
+    font-family:'Geologica', sans-serif;
+}
+
+
+/*ESTATISTICA (ONDE CONTEM DADOS E PARALLAX)*/
+.conteiner-estatistica
+.info_estatisticas{
+    height: 190px;
+    width: 100%;
+    background-color: #cc0707;
+    position: absolute;
+    top: 349px;
+    background-image:linear-gradient(4deg, #000000e7,#000000ec), url(../img/gallery/parallax.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica{
+    font-family:'Geologica', sans-serif;
+    padding: 15px;
+}
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica h1{
+    text-align: center;
+}
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica span{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica2{
+    font-family:'Geologica', sans-serif;
+    padding: 15px;
+}
+
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica2 h1{
+    text-align: center;
+}
+
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica2 span{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica3{
+    font-family:'Geologica', sans-serif;
+    padding: 15px;
+}
+
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica3 h1{
+    text-align: center;
+}
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica3 span{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica4{
+    font-family:'Geologica', sans-serif;
+    padding: 15px;
+}
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica4 h1{
+    text-align: center;
+}
+.conteiner-estatistica
+.info_estatisticas
+.number_estatistica4 span{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.continer_menu_comidas_valores{
+    background-color: darkgray;
+    padding: 20px;
+
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores{
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.menu_cardapio_comida{
+    text-align: center;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.menu_cardapio_comida span{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rowdies', 'cursive';
+    font-size: 1rem;
+}
+
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.menu_cardapio_comida
+nav
+ul{
+    font-family:'Geologica', sans-serif;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin-top: 20px;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.menu_cardapio_comida
+nav
+ul li{
+    margin-top: 10px;
+    margin-left: 30px;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.menu_cardapio_comida
+nav
+ul li::before{
+    content: "";
+    border-bottom:1px solid var(--color-logo);
+    top: 100%;
+    display: block;
+    z-index: 1;
+    inset: 0;
+    transition: 0.5s ease-in-out;
+    transform-origin: left;
+    transform: scale(0);
+}
+
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.menu_cardapio_comida
+nav
+ul li:hover::before{
+    transform: scale(1);
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.menu_cardapio_comida
+nav
+ul li:hover{
+    color: var(--color-logo);
+    
+}
+
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.sub_cardapio_acima_comida{
+    text-align: center;
+}
+.continer_menu_comidas_valores
+.sub_cardapio_acima_comida
+h1{
+    font-size: 1rem;
+    margin: 20px;
+}
+/* CONTAINER ESTILIZAÇÃO CARDS CARDAPIO MENU*/
+
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteiner_conteudo{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    justify-content: center;
+}         
+
+/*ESTILIZAÇÃO CARDS CARDAPIO MENU*/
+
+
+/*ESTILIZAÇÃO CARD 1*/
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteiner_conteudo
+.conteudo_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_1
+h1{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_1
+span{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_1
+p{
+    font-family:'Geologica', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 0.7rem;
+}
+
+/*ESTILIZAÇÃO CARD 2*/
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteiner_conteudo
+.conteudo_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_2
+h1{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_2
+p{
+    font-family:'Geologica', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 0.7rem;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_2
+span{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+}
+
+/*ESTILIZAÇÃO CARD 3*/
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteiner_conteudo
+.conteudo_3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_3
+h1{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_3
+p{
+    font-family:'Geologica', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 0.7rem;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_3
+span{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+}
+
+/*ESTILIZAÇÃO CARD 4*/
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteiner_conteudo
+.conteudo_4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_4
+h1{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight:  900;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_4
+p{
+    font-family:'Geologica', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 0.7rem;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_4
+span{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+}
+
+
+/*ESTILIZAÇÃO CARD 5*/
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteiner_conteudo
+.conteudo_5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_5
+h1{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_5
+p{
+    font-family:'Geologica', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 0.7rem;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_5
+span{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+}
+
+
+/*ESTILIZAÇÃO CARD 6*/
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteiner_conteudo
+.conteudo_6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_6
+h1{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_6
+p{
+    font-family:'Geologica', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 0.7rem;
+}
+.continer_menu_comidas_valores
+.sub_continer_menu_comidas_valores
+.conteudo_6
+span{
+    color: var(--color-logo);
+    font-family:'Geologica', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    height: 120px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--color_fundo);
+}
+
+/*Estilização footer*/
+
+.footer_container{
+display: flex;
+margin: 0 auto;
+align-items: center;
+justify-content: center;
+color:black;
+font-family:'Geologica', sans-serif;
+font-size: .7rem;
+max-width: 1200px;
+justify-content: space-between;
+background-color: rgba(128, 128, 128, 0.24);
+height: 100%;
+position: relative;
+}
+
+/*Estilização footer endereço*/
+.footer_container
+svg{
+    font-size: 0rem;
+}
+.footer_container
+.footer_endereco{
+    margin-right: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+
+
+/*Estilização reverva e numero*/
+
+
+.footer_container
+.footer_reverva{
+    margin-right: 40px;
+    font-family:'Geologica', sans-serif;
+}
+.footer_container
+.footer_reverva h1{
+    font-size: 1rem;
+}
+
+.footer_container
+.footer_redes_sociais{
+    margin-right: 40px;
+    font-family:'Geologica', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer_container
+.footer_redes_sociais h1{
+    font-size: .8rem;
+}
+
+.footer_container
+.footer_redes_sociais svg{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ANIMAÇÃO CONTEUDO HEADER LEFT TO REIGTH */
+@keyframes ani_header_top {
+    0%{
+        transform: translateX(-1100px);
+        opacity: -1;
+    }
+    100%{
+       
+    }
+}
+
+/*ANIMAÇÃO CONTEUDO DOWN HEADER LEFT TO REIGTH */
+@keyframes ani_conteudo_downheader {
+    0%{
+        transform: translateX(-600px);
+        opacity: -1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*ANIMAÇÃO SIMPLES DO ' DA LOGO */
+@keyframes ani_logo {
+    0%{
+       color: #cc0707;
+    }
+    100%{
+        color: #000000; 
+    }
+}
+/*ANIMAÇÃO SIMPLES DA IMG COMIDA NO INICIO*/
+@keyframes ani_img_comida_top {
+    0%{
+        transform: scale(.9);
+    }
+    100%{
+        transform: scale(.8);
+    }
+}

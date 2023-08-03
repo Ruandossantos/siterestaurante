@@ -1,0 +1,44 @@
+@media screen and (max-width:880px){
+    
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+/*Desativação do list e botão (reserva da NAV)*/
+header
+nav{
+    height: 40px;
+}
+
+header
+nav
+ul
+li,button{
+    display: none;
+}
+header
+nav
+.header_top h1{
+    margin-right: 230px;
+}
+header
+nav
+.header_top #h1_te, #h1letra1,
+#h1letra2{
+    font-size: 1rem;
+
+}
+
+/*Estilização Nav_Menu*/
+header
+nav
+#container_menu{
+    position: absolute;
+    top: 0;
+    left: 98%;
+    display: block;
+}
+
+
+}
